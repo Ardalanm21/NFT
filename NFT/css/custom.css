@@ -1,0 +1,513 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Kalameh';
+    background-color: #07101D;
+}
+
+@font-face {
+    font-family: 'Kalameh';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../font/WebFonts/_Woff/KalamehWeb-Black.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Kalameh';
+    font-style: normal;
+    font-weight: bold;
+    src: url('../font/WebFonts/_Woff/KalamehWeb-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Kalameh';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../font/WebFonts/_Woff/KalamehWeb-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Kalameh';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../font/WebFonts/_Woff/KalamehWeb\(FaNum\)-Black.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Kalameh';
+    font-style: normal;
+    font-weight: bold;
+    src: url('../font/WebFonts/_Woff/KalamehWeb\(FaNum\)-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Kalameh';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../font/WebFonts/_Woff/KalamehWeb\(FaNum\)-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'GilroyBold';
+    font-style: normal;
+    font-weight: bold;
+    src: url('../font/WebFonts/_Woff/Gilroy-Bold.woff') format('woff');
+}
+@font-face {
+    font-family: 'Kalameh';
+    font-weight: 300;
+    src: url('../font/WebFonts/_Woff/KalamehWeb-Thin.woff');
+}
+.link_header {
+    color: white;
+    text-decoration: none;
+}
+
+.icon_header {
+    width: 24px;
+    height: 24px;
+    font-size: x-large;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    filter: blur(80px);
+    top: -300px;
+    right: -400px;
+    width: 904px;
+    height: 876px;
+    background-image: radial-gradient(#3D0D58 38%, #070F1C 0);
+    -webkit-filter: blur(80px);
+    z-index: -1;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-image: url('../img/Group1.png');
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+.color_FF3C00 {
+    color: #FF3C00;
+}
+
+.border_FF3C00 {
+    border: 1px solid #FF3C00;
+}
+
+.btn_gradient {
+    background: linear-gradient(90deg, #7011AD 0%, #BC0505 49.31%, #FC630F 100%);
+
+}
+
+.main_pattern {
+    position: relative;
+    z-index: 1;
+    overflow: hidden !important;
+}
+
+.main_pattern::before {
+    content: '';
+    background-image: url('../img/pattern.png');
+    width: 35px;
+    height: 47px;
+    position: absolute;
+    background-repeat: no-repeat;
+    z-index: 2;
+    right: 50px;
+    top: 30px;
+}
+
+.main_pattern::after {
+    content: '';
+    background-image: url('../img/pattern2.png');
+    width: 68px;
+    height: 45px;
+    position: absolute;
+    background-repeat: no-repeat;
+    z-index: 2;
+    bottom: 100px;
+
+}
+
+.count_user_site {
+    /* width: 300px;
+    height: 80px; */
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 15%;
+    right: 15%;
+    padding: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.container_wallet {
+    background: linear-gradient(270.13deg, #FF640D 6.95%, rgba(254, 76, 11, 0.975119) 19.3%, rgba(252, 6, 6, 0.903404) 43.99%, rgba(130, 18, 241, 0.81) 95.06%);
+}
+
+main {
+    margin-top: 5rem;
+}
+
+.wallet_box>div {
+    background-color: #161E2A;
+    padding: 0;
+}
+
+.wallet_box {
+    padding: 1px;
+    height: 188px;
+}
+
+.wallet_box_1 {
+    padding: 1px;
+    background-image: linear-gradient(to right bottom, #07101D, #FC280C);
+}
+
+.wallet_box_2 {
+    padding: 1px;
+    background-image: linear-gradient(to right bottom, #07101D, #00D1FF);
+}
+
+.wallet_box_3 {
+    padding: 1px;
+    background-image: linear-gradient(to right bottom, #07101D, #760AFF);
+
+}
+
+.wallet_box_4 {
+    background-image: linear-gradient(to right bottom, #07101D, #FE007A);
+}
+
+.wallet_box_5 {
+    background-image: linear-gradient(to right bottom, #07101D, #FFBF1C);
+}
+
+main .row {
+    margin: 5rem 0;
+}
+
+.rectangle {
+    width: 43px;
+    height: 22px;
+    rotate: 128.75deg;
+    background-color: #07101D;
+    bottom: -2px;
+    right: -17px;
+
+}
+
+.rectangle_1 {
+    border-bottom: 1px solid #FC280C;
+}
+
+.rectangle_2 {
+    border-bottom: 1px solid #00D1FF;
+}
+
+.rectangle_3 {
+    border-bottom: 1px solid #760AFF;
+}
+
+.rectangle_4 {
+    border-bottom: 1px solid #FE007A;
+}
+
+.rectangle_5 {
+    border-bottom: 1px solid #FFBF1C;
+
+}
+
+.hotbids_box {
+    background-color: #FFFFFF1A;
+
+}
+
+.btn_hot {
+    background-image: linear-gradient(270.13deg, #FF640D, #BC0505, rgba(130, 18, 241, 0.81));
+
+}
+
+.time_hot {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    left: 0;
+    top: 1.5rem;
+    margin-left: 5.5rem;
+    text-align: center;
+    font-family: 'GilroyBold';
+}
+
+.like_hot {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    margin-left: 2rem;
+    left: 0;
+    top: 1.5rem;
+}
+
+.icon_propertie_box {
+    top: -40px;
+    right: 34px;
+    padding: 0.8rem;
+    border: 1px solid #FFFFFF80;
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.bg_trend_box {
+    background: #FFFFFF1A;
+    bottom: -100px;
+    padding-top: 8rem !important;
+    z-index: -1;
+}
+
+.text_spacig {
+    word-spacing: 5px !important;
+    font-weight: lighter !important;
+}
+
+.ellipse_3 {
+    width: 1345px;
+    height: 1613px;
+    background: radial-gradient(62.37% 62.37% at 50% 50%, rgba(189, 9, 95, 0.13) 37%, rgba(7, 15, 28, 00) 100%);
+    top: 3rem;
+    right: -40rem;
+    filter: blur(50px);
+    -webkit-filter: blur(50px);
+}
+
+.bg_creator_box {
+    background: #FFFFFF1A;
+    border: 2px solid #FFFFFF33;
+    max-width: 392px;
+}
+
+.memberShip_box {
+    background: linear-gradient(90deg, #A50E86 0.16%, #C10B70 24.02%, #E83947 38.73%, #DF330D 55.88%, #C55212 81.05%, #D37506 100%);
+    width: 100%;
+    height: 324px;
+}
+
+.memberShip_box::before {
+    position: absolute;
+    content: '';
+    background-image: url('../img/Group123.png');
+    width: 982.71px;
+    height: 726.27px;
+    top: -420px;
+    left: -500px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    rotate: 182.11deg;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+.memberShip_box::after {
+    position: absolute;
+    content: '';
+    background-image: url('../img/Group123.png');
+    width: 982.71px;
+    height: 726.27px;
+    top: 20px;
+    right: -510px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    rotate: 3.11deg;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+.memberShip_box_child{
+    box-shadow: 0 0 50px 0 rgba(255, 255, 255, 0.6);
+}
+.btn_member_container{
+    background-color: #fff;
+    
+}
+.btn_member_container button{
+    background-color: #07101D;
+    border: none;
+    outline: none;
+    cursor: pointer !important;
+}
+.btn_member_container div input{
+    border: none !important;
+    outline: none !important;
+    border-color: unset !important;
+}
+
+footer {
+    background-color: #091028;
+    border-top: 2px solid rgba(255, 255, 255, 0.2);
+}
+.icon_footer{
+    color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.1);
+    max-width: 52px !important;
+}
+.icon_footer_box a:nth-child(3){
+    background: linear-gradient(270.13deg, #FF640D 6.95%, rgba(254, 76, 11, 0.975119) 19.3%, rgba(252, 6, 6, 0.903404) 43.99%, rgba(130, 18, 241, 0.81) 95.06%);
+    color: #fff;
+    
+}
+.ellipse-4{
+    width: 555px;
+    height: 504px;
+    background: radial-gradient(63% 63% at 50% 50% ,rgba(8,52,164,0.2) 22% , rgba(7,15,28,00) 100%);
+    filter: blur(50px);
+    -webkit-filter: blur(50px);
+    top: -20%;
+    right: -5%;
+    z-index: 1 !important;
+}
+
+@media screen and (max-width:991px) {
+    .bg_dark {
+        background-color: rgb(33, 37, 41) !important;
+    }
+
+    .col-lg-7 {
+        align-items: center;
+    }
+
+    .col-lg-5 {
+        display: flex;
+        align-items: center;
+    }
+
+    .img_header {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .title_main {
+        font-size: 2rem;
+    }
+
+    .titr_main {
+        text-align: center;
+    }
+
+    header::before {
+        width: 100%;
+
+    }
+
+    header::after {
+        display: none;
+    }
+
+    .time_hot {
+        width: 120px;
+        height: 34px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .time_hot span {
+        font-size: 1rem;
+    }
+
+    .like_hot {
+        width: 32px;
+        height: 32px;
+    }
+
+    .creator_box {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .btn_member_container{
+        width: 100% !important;
+    }
+    /* .btn_member_container button{
+        width: 100%;
+    } */
+
+}
+@media screen and (max-width:600px) {
+    .main_pattern::before ,.main_pattern::after{
+        transform: scale(0.8);
+        -webkit-transform: scale(0.8);
+        -moz-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        -o-transform: scale(0.8);
+    }  
+    .ellipse-4,.ellipse_3{
+        display: none;
+    }
+    .count_user_site{
+        height: 56px;
+    }
+    .container_wallet{
+        width: 40px !important;
+        height: 40px !important;
+    }
+    .container_wallet img{
+        width: 24px;
+        height: 24px;
+    }
+    
+    .fs-5 {
+        font-size: 1rem !important;
+    }
+
+    .fs-4{
+        font-size: calc(1rem + .3vw) !important;
+    }
+    .memberShip_box::after{
+        position: absolute;
+        content: '';
+        background-image: url('../img/Group123.png');
+        width: 900.71px;
+        height: 306.27px;
+        top: 150px;
+        right: -430px;
+        gap: 0px;
+        border: 1px 0px 0px 0px;
+        opacity: 0px;
+        rotate: 25deg;
+        background-repeat: no-repeat;
+        z-index: 0;
+    }
+    .memberShip_box::before{
+        position: absolute;
+        content: '';
+        background-image: url('../img/Group123.png');
+        width: 982.71px;
+        height: 586.27px;
+        top: -420px;
+        left: -500px;
+        gap: 0px;
+        border: 1px 0px 0px 0px;
+        opacity: 0px;
+        rotate: 191.11deg;
+        background-repeat: no-repeat;
+        z-index: 0;
+    }
+}
+
